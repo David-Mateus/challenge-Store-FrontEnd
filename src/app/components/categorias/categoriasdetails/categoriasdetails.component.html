@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 centralizar ">
+      <div class="card">
+        <div class="card-body">
+          <h3>Cadastro de Categoria</h3>
+          <br />
+          <mdb-form-control>
+            <input
+              mdbInput
+              type="text"
+              id="name"
+              class="form-control"
+              [(ngModel)]="categoria.categoryName"
+            />
+            <label mdbLabel class="form-label" for="name">Nome</label>
+          </mdb-form-control>
+          <br />
+          <mdb-form-control>
+            <input
+              mdbInput
+              type="text"
+              id="price"
+              class="form-control"
+              [(ngModel)]="categoria.categoryDescription"
+            />
+            <label mdbLabel class="form-label" for="price">Dexcrição</label>
+          </mdb-form-control>
+          <br />
+          <mdb-form-control>
+            <input
+              mdbInput
+              type="text"
+              id="status"
+              class="form-control"
+              [(ngModel)]="categoria.categoryStatus"
+            />
+            <label mdbLabel class="form-label" for="status">Status</label>
+          </mdb-form-control>
+          <br />
+          <button
+            type="button"
+            class="btn btn-primary"
+            mdbRipple
+            (click)="save()"
+          >
+            Salvar
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
